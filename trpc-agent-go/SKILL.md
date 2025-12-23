@@ -1,6 +1,6 @@
 ---
 name: trpc-agent-go
-description: 一个用于构建智能 agent 系统的Go 框架
+description: Go语言编程框架，用于使用大型语言模型（llm）和工具构建Agent系统
 ---
 
 # trpc-agent-go
