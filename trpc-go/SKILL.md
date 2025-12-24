@@ -1,9 +1,9 @@
 ---
-name: trpc-go-examples
+name: trpc-go
 description: tRPC-Go framework examples and tutorials - comprehensive guide for Go microservices with tRPC
 ---
 
-# trpc-go-examples Skill
+# trpc-go Skill
 
 This skill provides comprehensive knowledge of the trpc-go-examples project, including code examples, configurations, and usage patterns for building Go microservices with the tRPC framework.
 
