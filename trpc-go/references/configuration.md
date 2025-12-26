@@ -41,66 +41,51 @@ Based on the analyzed configuration files:
 
 ## Example Configuration Files
 
-### features/https/client_with_provider.yaml
+### sync_docs_to_iwiki.json
 ```
-client:
-  service:
-    - name: trpc.app.server.stdhttps
-      target: ip://127.0.0.1:9443
-      protocol: http_no_protocol
-      network: tcp
-      timeout: 1000
-      tls_cert: testdata/client.crt
-  ...
-```
-
-### features/config/custom.yaml
-```
-custom :
-  test : test
-  test_obj :
-    key1 : value1
-    key2 : false
-    key3 : 1234...
+[
+  {
+    "iwikiPageID": "279550562",
+    "iwikiPageTitle": "tRPC-Go 框架概述",
+    "gitFilePath": "docs/overview.zh_CN.md"
+  },
+  {
+    "iwikiPageID": "118272478",
+    "iwikiPageTitle": "tRPC-Go 快速上手",
+ ...
 ```
 
-### features/cfgtag/trpc_go.yaml
+### .resources/examples/robust/trpc-robust-dashboard.json
 ```
-global:                   # 全局配置
-  namespace: Development  # 环境类型，分正式 Production 和非正式 Development 两种类型
-  env_name: test          # 环境名称，非正式环境下多环境的名称
-
-server:                                     # 服务端配...
-```
-
-### features/reflection/server/trpc_go.yaml
-```
-global:
-  namespace: Development
-  env_name: test
-
-server:
-  app: examples
-  server: echo
-  reflection_service: &reflection_service trpc.reflection.v1.ServerReflection
-  service:
-    - name: trpc.test...
+{
+  "__inputs": [
+    {
+      "name": "DS_PROMETHEUS",
+      "label": "Prometheus",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "Prometheus...
 ```
 
-### features/reflection/server-do-not-modify-config-file/trpc_go.yaml
+### testdata/trpc_go.yaml
 ```
-global:
-  namespace: Development
-  env_name: test
+global:  # global config.
+  namespace: Development  # environment type, two types: production and development.
+  env_name: test  # environment name, names of multiple environments in informal settings...
+```
 
-server:
-  app: examples
-  server: echo
-  service:
-    - name: trpc.test.helloworld.GreeterXXX
-      ip: 127.0.0.1
-      nic: eth0
-      port: 8003
-  ...
+### testdata/trpc_go_error.yaml
+```
+global:                             # global config.
+  namespace: Development            # environment type, two types: production and development.
+  env_name: test                    # environment na...
+```
+
+### testdata/trpc_go_restful_cors.yaml
+```
+global:                             # global config.
+  namespace: Development            # environment type, two types: production and development.
+  env_name: test                    # environment na...
 ```
 
