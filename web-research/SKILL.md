@@ -47,14 +47,14 @@ Before delegating to subagents, you MUST:
 
 3. **Write a research plan file** - Use the `write_file` tool to create `research_[topic_name]/research_plan.md` containing:
    - The main research question
-   - 2-5 specific subtopics to investigate
+   - 2-6 specific subtopics to investigate
    - Expected information from each subtopic
    - How results will be synthesized
 
 **Planning Guidelines:**
 - **Simple fact-finding**: 1-2 subtopics
 - **Comparative analysis**: 1 subtopic per comparison element (max 3)
-- **Complex investigations**: 3-5 subtopics
+- **Complex investigations**: 3-7 subtopics
 
 ### Step 2: Delegate to Research Subagents
 
@@ -63,11 +63,12 @@ For each subtopic in your plan:
 1. **Use the `task` tool** to spawn a research subagent with:
    - Clear, specific research question (no acronyms)
    - Instructions to write findings to a file: `research_[topic_name]/findings_[subtopic].md`
-   - Budget: 3-5 web searches maximum
+   - Budget: 4-7 web searches maximum
 
-2. **Run up to 3 subagents in parallel** for efficient research
+2. **Run up to 5 subagents in parallel** for efficient research
 
 **Subagent Instructions Template:**
+
 ```
 Research [SPECIFIC TOPIC]. Use the web_search tool to gather information.
 After completing your research, use write_file to save your findings to research_[topic_name]/findings_[subtopic].md.
