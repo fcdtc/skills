@@ -1,4 +1,5 @@
 ---
+custom: true
 name: video-downloader
 description: Downloads videos from ANY website including those with dynamic loading. Extracts m3u8, mp4 URLs from pages using Playwright, then downloads with MAX QUALITY using yt-dlp.
 ---

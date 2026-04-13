@@ -1,4 +1,5 @@
 ---
+custom: true
 name: web-research
 description: Searches multiple web sources, synthesizes findings, and produces cited research reports using delegated subagents. Use when the user asks to research a topic online, search the web, look something up, find current information, compare options, or produce a research report.
 ---

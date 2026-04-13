@@ -1,4 +1,5 @@
 ---
+custom: true
 name: tech-arch-writer
 description: Professional technical architecture documentation generator. Analyze existing codebases to generate comprehensive architecture documentation, or design new system architectures from requirements. Produces markdown documents with mermaid diagrams for system architecture, data flows, and component relationships. Use when: (1) Generating architecture documentation from existing code, (2) Designing technical architecture for new systems, (3) Creating system design documents with architecture diagrams, (4) Documenting software architecture patterns and design decisions.
 ---
